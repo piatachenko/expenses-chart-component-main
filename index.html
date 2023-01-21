@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Expenses chart component</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex min-h-screen items-center justify-center bg-[#f8e9dd]">
+    <main class="max-w-prose">
+      <section
+        class="my-5 mx-1 flex items-center justify-between rounded-xl bg-[#ec775f] px-6 py-5"
+      >
+        <div>
+          <p class="mb-1.5 text-sm text-[#f8e9dd]">My balance</p>
+          <p class="text-2xl font-bold text-[#fffaf5]">$921.48</p>
+        </div>
+        <img src="images/logo.svg" alt="Logo" width="60" />
+      </section>
+      <section
+        class="my-5 mx-1 rounded-xl bg-[#fffaf5] p-3 sm:px-7 sm:pt-6 sm:pb-9"
+      >
+        <h1 class="text-2xl font-bold text-[#382314]">
+          Spending - Last 7 days
+        </h1>
+        <article
+          class="mb-7 flex items-end justify-between border-b-[1.5px] border-b-[#f8e9dd] pt-14 pb-7"
+        >
+          <div class="relative flex flex-col items-center justify-center">
+            <p class="hidden" id="mon"></p>
+            <div
+              class="mx-1.5 mb-1 w-7 rounded-md hover:cursor-pointer hover:opacity-60 sm:w-10"
+            ></div>
+            <span class="text-xs text-[#93867b]">mon</span>
+          </div>
+
+          <div class="relative flex flex-col items-center justify-center">
+            <p class="hidden" id="tue"></p>
+            <div
+              class="mx-1.5 mb-1 w-7 rounded-md hover:cursor-pointer hover:opacity-60 sm:w-10"
+            ></div>
+            <span class="text-xs text-[#93867b]">tue</span>
+          </div>
+
+          <div class="relative flex flex-col items-center justify-center">
+            <p class="hidden" id="wed"></p>
+            <div
+              class="mx-1.5 mb-1 w-7 rounded-md hover:cursor-pointer hover:opacity-60 sm:w-10"
+            ></div>
+            <span class="text-xs text-[#93867b]">wed</span>
+          </div>
+
+          <div class="relative flex flex-col items-center justify-center">
+            <p class="hidden" id="thu"></p>
+            <div
+              class="mx-1.5 mb-1 w-7 rounded-md hover:cursor-pointer hover:opacity-60 sm:w-10"
+            ></div>
+            <span class="text-xs text-[#93867b]">thu</span>
+          </div>
+
+          <div class="relative flex flex-col items-center justify-center">
+            <p class="hidden" id="fri"></p>
+            <div
+              class="mx-1.5 mb-1 w-7 rounded-md hover:cursor-pointer hover:opacity-60 sm:w-10"
+            ></div>
+            <span class="text-xs text-[#93867b]">fri</span>
+          </div>
+
+          <div class="relative flex flex-col items-center justify-center">
+            <p class="hidden" id="sat"></p>
+            <div
+              class="mx-1.5 mb-1 w-7 rounded-md hover:cursor-pointer hover:opacity-60 sm:w-10"
+            ></div>
+            <span class="text-xs text-[#93867b]">sat</span>
+          </div>
+
+          <div class="relative flex flex-col items-center justify-center">
+            <p class="hidden" id="sun"></p>
+            <div
+              class="mx-1.5 mb-1 w-7 rounded-md hover:cursor-pointer hover:opacity-60 sm:w-10"
+            ></div>
+            <span class="text-xs text-[#93867b]">sun</span>
+          </div>
+        </article>
+        <article class="flex items-end justify-between">
+          <div>
+            <p class="mb-1 text-sm text-[#93867b]">Total this month</p>
+            <p class="text-4xl font-bold text-[#382314]">$478.33</p>
+          </div>
+          <div>
+            <p class="text-end font-bold text-[#382314]">+2.4%</p>
+            <p class="text-sm text-[#93867b]">from last month</p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
